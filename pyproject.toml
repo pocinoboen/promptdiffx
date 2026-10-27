@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pocinoboen-promptdiffx"
+version = "0.1.0"
+description = "对齐两版提示词的槽位，标出真正改变行为的修改与仅换词的修改"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "pocinoboen" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://pocinoboen.github.io"
+Repository = "https://github.com/pocinoboen/promptdiffx"
+Issues = "https://github.com/pocinoboen/promptdiffx/issues"
+
+[project.scripts]
+promptdiffx = "promptdiffx:main"
+
+[tool.setuptools]
+py-modules = ["promptdiffx"]
